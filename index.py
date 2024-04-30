@@ -29,7 +29,7 @@ if __name__ == "__main__":
         (r"/", basicRequestHandler),
         (r"/animal", listRequestHandler),
         (r"/isEven", queryParamRequestHandler),
-        (r"/students/([a-z]+)/([0-9]+)", resourceParamRequestHandler)
+        (r"/students/([a-zA-Z]+)/([0-9]+)", resourceParamRequestHandler)
     ])
 
     port = 8882
