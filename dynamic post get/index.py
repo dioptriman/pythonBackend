@@ -2,6 +2,9 @@ import tornado.web
 import tornado.ioloop
 import json
 
+class mainRequestHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("index.html")
 
 class listRequestHandler(tornado.web.RequestHandler):
     def get(self):
@@ -19,6 +22,7 @@ class listRequestHandler(tornado.web.RequestHandler):
 
 if __name__ == "__main__":
     app = tornado.web.Application([
+        (r"/", mainRequestHandler),
         (r"/list", listRequestHandler),
     ])
 

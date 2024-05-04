@@ -5,3 +5,6 @@ Lemons
 Avocado
 Cherry
 Kiwi
+Peach
+Papaya
+Melon
